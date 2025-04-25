@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import TypeWriter from "@/components/TypeWriter";
 import ProgressBar from "@/components/ProgressBar";
-import { Mail } from "lucide-react";
+import { Mail, FileText } from "lucide-react";
 
 const Index = () => {
   const roles = [
