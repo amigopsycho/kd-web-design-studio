@@ -11,7 +11,7 @@ const Index = () => {
   ];
 
   const handleEmailClick = () => {
-    const emailAddress = "krishnadas@example.com";
+    const emailAddress = "krishna98das@gmail.com";
     const subject = "Hello Krishnadas";
     const body = "Hi Krishnadas,\n\nI came across your portfolio and would love to connect with you.\n\nBest regards,";
     
