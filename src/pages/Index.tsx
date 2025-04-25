@@ -1,16 +1,22 @@
-
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import TypeWriter from "@/components/TypeWriter";
 import ProgressBar from "@/components/ProgressBar";
-import { FileText, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const Index = () => {
   const roles = [
-    "Frontend Developer",
     "UI/UX Designer",
-    "Data Analyst",
+    "Developer"
   ];
+
+  const handleEmailClick = () => {
+    const emailAddress = "krishnadas@example.com";
+    const subject = "Hello Krishnadas";
+    const body = "Hi Krishnadas,\n\nI came across your portfolio and would love to connect with you.\n\nBest regards,";
+    
+    window.location.href = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -25,9 +31,6 @@ const Index = () => {
           <h2 className="text-xl md:text-2xl text-text-light mb-8">
             I'm a <TypeWriter words={roles} />
           </h2>
-          <Button className="bg-primary hover:bg-primary-dark">
-            Hire me
-          </Button>
         </div>
       </section>
 
@@ -100,13 +103,14 @@ const Index = () => {
       <section id="contact" className="py-20 bg-secondary-light px-4">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-text mb-4">Contact Me</h2>
-          <h3 className="text-2xl font-semibold text-primary mb-4">Have Any Project?</h3>
+          <h3 className="text-2xl font-semibold text-primary mb-4">Let's Create Something Amazing Together</h3>
           <p className="text-text-light mb-8 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, 
-            facere numquam voluptate aspernatur sit perferendis qui nisi modi!
+            I'm always interested in hearing about new projects and opportunities. 
+            Whether you have a question or just want to say hi, feel free to drop me an email. 
+            I'll try my best to get back to you!
           </p>
-          <Button className="bg-primary hover:bg-primary-dark">
-            <Mail className="mr-2 h-4 w-4" /> Let's Chat
+          <Button onClick={handleEmailClick} className="bg-primary hover:bg-primary-dark">
+            <Mail className="mr-2 h-4 w-4" /> Email Me
           </Button>
         </div>
       </section>
