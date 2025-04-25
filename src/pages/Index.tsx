@@ -46,9 +46,14 @@ const Index = () => {
               Adept at collaborating with teams to deliver high-quality digital experiences. 
               Seeking opportunities to contribute technical expertise and creativity to innovative web development projects.
             </p>
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+            {/*   <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
               <FileText className="mr-2 h-4 w-4" /> Download CV
-            </Button>
+            </Button> */}
+            <a href="/cv.pdf" download>
+              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+                 <FileText className="mr-2 h-4 w-4" /> Download CV
+              </Button>
+            </a>
           </div>
         </div>
       </section>
