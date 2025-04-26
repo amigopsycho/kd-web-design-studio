@@ -24,7 +24,7 @@ const NotFound = () => {
         </p>
         <Button 
           className="flex items-center gap-2 bg-primary hover:bg-primary-dark"
-          onClick={() => window.location.href = '/kd-web-design-studio/'}
+          onClick={() => window.location.href = '#/'}
         >
           <ArrowLeft className="h-4 w-4" />
           Return to Home
